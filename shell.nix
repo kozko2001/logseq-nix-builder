@@ -25,6 +25,9 @@ pkgs.mkShell {
       nodePackages.gulp
       nodePackages.yarn
       nodePackages.node-gyp
+      pkgs.python3
+      pkgs.python3Packages.setuptools
+      pkgs.python3Packages.distutils
     ] ++ macosDeps;
   shellHook = ''
     export npm_config_python=${pkgs.python3}/bin/python3
