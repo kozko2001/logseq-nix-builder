@@ -40,3 +40,11 @@ build
 
 - Creates a nix shell with all the requirements from the github action workflows files
 - executes the release commands
+
+## Troubleshooting
+
+1. `Out of Memory` error 
+
+```
+export _JAVA_OPTIONS="-Xmx4g"
+```

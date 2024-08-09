@@ -28,6 +28,7 @@ pkgs.mkShell {
       pkgs.python3
       pkgs.python3Packages.setuptools
       pkgs.python3Packages.distutils
+      pkgs.zip
     ] ++ macosDeps;
   shellHook = ''
     export npm_config_python=${pkgs.python3}/bin/python3
